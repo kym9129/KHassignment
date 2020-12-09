@@ -63,13 +63,13 @@ public class RSPGame {
 		//컴퓨터 바위
 		if(com == 2) {
 			if(user == 1) {
-				System.out.println(userWin);
+				System.out.println(comWin);
 			}
 			else if(user == 2) {
 				System.out.println(tie);
 			}
 			else if(user == 3) {	
-				System.out.println(comWin);
+				System.out.println(userWin);
 			}
 		}
 		
