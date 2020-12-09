@@ -54,7 +54,7 @@ public class Example {
 		
 		System.out.println("\n >> " + level +"학년 " + classNum + "반 " + num + "번 " + genderReturn + " " + name +"은(는) 성적이 " + grade + "이다.");
 		
+		sc.close();
 		
 	}
-	
 }
