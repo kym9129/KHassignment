@@ -43,47 +43,57 @@ public class RSPGame {
 				+ "===================\n");
 
 		//판정
-		String comWin = "컴퓨터가 이겼습니다. ^^";
-		String userWin = "당신이 이겼습니다. ㅠ.ㅠ";
-		String tie = "비겼습니다.";
+//		String comWin = "컴퓨터가 이겼습니다. ^^";
+//		String userWin = "당신이 이겼습니다. ㅠ.ㅠ";
+//		String tie = "비겼습니다.";
 		
-		//컴퓨터 가위
-		if(com == 1) {
-			if(user == 1) {
-				System.out.println(tie);
-			}
-			else if(user == 2) {
-				System.out.println(comWin);
-			}
-			else if(user == 3) {	
-				System.out.println(userWin);
-			}
+		if (user == com) {
+			System.out.println("비겼습니다.");
+		}
+		else if(user % 3 > com % 3) {
+			System.out.println("당신이 이겼습니다. ㅠ.ㅠ");
+		}
+		else {
+			System.out.println("컴퓨터가 이겼습니다. ^^");
 		}
 		
-		//컴퓨터 바위
-		if(com == 2) {
-			if(user == 1) {
-				System.out.println(comWin);
-			}
-			else if(user == 2) {
-				System.out.println(tie);
-			}
-			else if(user == 3) {	
-				System.out.println(userWin);
-			}
-		}
-		
-		//컴퓨터 보
-		if(com == 3) {
-			if(user == 1) {
-				System.out.println(userWin);
-			}
-			else if(user == 2) {
-				System.out.println(comWin);
-			}
-			else if(user == 3) {	
-				System.out.println(tie);
-			}
-		}
+//		//컴퓨터 가위
+//		if(com == 1) {
+//			if(user == 1) {
+//				System.out.println(tie);
+//			}
+//			else if(user == 2) {
+//				System.out.println(comWin);
+//			}
+//			else if(user == 3) {	
+//				System.out.println(userWin);
+//			}
+//		}
+//		
+//		//컴퓨터 바위
+//		if(com == 2) {
+//			if(user == 1) {
+//				System.out.println(comWin);
+//			}
+//			else if(user == 2) {
+//				System.out.println(tie);
+//			}
+//			else if(user == 3) {	
+//				System.out.println(userWin);
+//			}
+//		}
+//		
+//		//컴퓨터 보
+//		if(com == 3) {
+//			if(user == 1) {
+//				System.out.println(userWin);
+//			}
+//			else if(user == 2) {
+//				System.out.println(comWin);
+//			}
+//			else if(user == 3) {	
+//				System.out.println(tie);
+//			}
+//		}
 	}
 }
