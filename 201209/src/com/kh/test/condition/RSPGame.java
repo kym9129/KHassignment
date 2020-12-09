@@ -30,7 +30,7 @@ public class RSPGame {
 		int user= sc.nextInt();
 
 		//컴퓨터 랜덤 수
-		int com = (int)(Math.random() * 3) + 1;
+		int com = (int)(Math.random() * 3 + 1);
 		
 		//가위바위보 변환		
 		String uResult = user == 1? "가위" : (user == 2? "바위" : "보");
@@ -38,8 +38,8 @@ public class RSPGame {
 	
 	
 		System.out.print("========결과========\n"
-				+ "당신은 " + uResult + "를 냈습니다. \n"
-				+ "컴퓨터는 " + cResult + "를 냈습니다. \n"
+				+ "당신은 " + uResult +"("+ user +")"  + "를 냈습니다. \n"
+				+ "컴퓨터는 " + cResult + "("+ com +")" + "를 냈습니다. \n"
 				+ "===================\n");
 
 		//판정
@@ -50,11 +50,17 @@ public class RSPGame {
 		if (user == com) {
 			System.out.println("비겼습니다.");
 		}
+		
+		else if ((user ==3 || com == 3) && user > com){
+			System.out.println("당신이 이겼습니다. ㅠ.ㅠ");
+		}
 		else if(user % 3 > com % 3) {
 			System.out.println("당신이 이겼습니다. ㅠ.ㅠ");
 		}
+
 		else {
 			System.out.println("컴퓨터가 이겼습니다. ^^");
+			
 		}
 		
 //		//컴퓨터 가위
@@ -88,12 +94,7 @@ public class RSPGame {
 //			if(user == 1) {
 //				System.out.println(userWin);
 //			}
-//			else if(user == 2) {
-//				System.out.println(comWin);
-//			}
-//			else if(user == 3) {	
-//				System.out.println(tie);
-//			}
 //		}
+		sc.close();
 	}
 }
