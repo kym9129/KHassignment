@@ -51,6 +51,7 @@ public class Test3 {
 		//2보다 작을 경우, 메세지 출력 + 다시 입력받기 (시작점으로 돌아가기)
 		else {
 			System.out.println("잘못 입력하셨습니다. 다시 입력하세요."); 
+		test();		
 		}
 
 	}
