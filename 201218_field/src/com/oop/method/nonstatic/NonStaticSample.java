@@ -19,7 +19,16 @@ public class NonStaticSample {
 		System.out.print("로또 번호 랜덤 생성 :");
 
 		for (int i = 0; i < lottoArr.length; i++) {
-			lottoArr[i] = (int) (Math.random() * 45) + 1;
+			int num = (int) (Math.random() * 45) + 1;
+			lottoArr[i] = num;
+			
+			//중복검사
+			for(int j = 0; j < i; j++) {
+				if(num == lottoArr[j]) {
+					i--;
+				}
+			}
+			
 			System.out.print(" " + lottoArr[i]);
 		}
 

@@ -5,7 +5,7 @@ public class StaticMethod {
 //static method
 //1. 전달한 문자열을 모두 대문자로 바꾸는 static 메소드
 //메소드명 : toUpper(String) : String
-	public String toUpper(String str) {
+	public static String toUpper(String str) {
 		String strResult = new String();
 		//ex. str = "hello";
 	
@@ -96,7 +96,7 @@ public class StaticMethod {
 	
 //2. 첫번째 문자열의 전달받은 인덱스의 문자를 전달받은 문자로 변경하는 static 메소드
 //메소드명 : setChar(String, int, char)
-	public void setChar(String str, int idx, char ch) {
+	public static void setChar(String str, int idx, char ch) {
 		//ex. "hello", 2, 'L' -> 결과: "heLlo"
 		String strResult = new String();
 		
@@ -119,7 +119,7 @@ public class StaticMethod {
 	
 //3. 전달한 문자열에서 영문자의 개수를 리턴하는 static 메소드
 //메소드명 : getAlphabetLength(String) : int
-	public int getAlphabetLength(String str) {
+	public static int getAlphabetLength(String str) {
 		//ex. str = "hello!!"
 		int cnt = 0;
 		for(int i = 0; i < str.length(); i++) {
@@ -134,7 +134,7 @@ public class StaticMethod {
 	
 //4. 전달한 문자열값을 하나로 합쳐서 리턴 
 //메소드명 : concat(String, String) : String
-	public String concat(String str1, String str2) {
+	public static String concat(String str1, String str2) {
 		
 		
 		return str1 + str2;
