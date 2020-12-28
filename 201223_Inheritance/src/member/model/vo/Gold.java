@@ -10,13 +10,11 @@ package member.model.vo;
 public class Gold extends Entity {
 	
 	public Gold() {
-		
+		super();
 	}
 	
 	public Gold(String name, String grade, int point) {
-		super.setName(name);
-		super.setGrade(grade);
-		super.setPoint(point);
+		super(name, grade, point);
 	}
 	
 	@Override

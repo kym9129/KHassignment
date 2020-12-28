@@ -7,7 +7,6 @@ public class Entity {
 	private int point;
 	
 	public Entity() {
-		
 	}
 	
 	public Entity(String name, String grade, int point) {

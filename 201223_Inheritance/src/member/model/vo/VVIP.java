@@ -3,13 +3,11 @@ package member.model.vo;
 public class VVIP extends Entity {
 	
 	public VVIP() {
-		
+		super();
 	}
 	
 	public VVIP(String name, String grade, int point) {
-		super.setName(name);
-		super.setGrade(grade);
-		super.setPoint(point);
+		super(name, grade, point);
 	}
 	
 	@Override
