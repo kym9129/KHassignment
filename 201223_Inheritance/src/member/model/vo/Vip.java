@@ -1,12 +1,12 @@
 package member.model.vo;
 
-public class VIP extends Entity {
+public class Vip extends Member {
 	
-	public VIP() {
+	public Vip() {
 		super();
 	}
 	
-	public VIP(String name, String grade, int point) {
+	public Vip(String name, String grade, int point) {
 		super(name, grade, point);
 	}
 

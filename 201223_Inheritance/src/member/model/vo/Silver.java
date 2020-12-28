@@ -1,6 +1,6 @@
 package member.model.vo;
 
-public class Silver extends Entity {
+public class Silver extends Member {
 	
 	public Silver() {
 		super();

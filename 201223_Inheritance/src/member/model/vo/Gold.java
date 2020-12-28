@@ -7,7 +7,7 @@ package member.model.vo;
 
 
 
-public class Gold extends Entity {
+public class Gold extends Member {
 	
 	public Gold() {
 		super();
