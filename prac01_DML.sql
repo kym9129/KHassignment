@@ -11,11 +11,11 @@
 	select * from tbl_escape_watch;
 
 --tbl_escape_watch 테이블에서 description 컬럼에 99.99% 라는 글자가 들어있는 행만 추출하세요.
+
+--문제1 답안
 select description
 from tbl_escape_watch
 where description like '%99.99\%%' escape '\';
-
-
 
 --@실습문제
 --파일경로를 제외하고 파일명만 아래와 같이 출력하세요.
@@ -33,6 +33,7 @@ where description like '%99.99\%%' escape '\';
 
 	select * 
 	from tbl_files;
+	
 /*
 출력결과 :
 --------------------------
@@ -43,6 +44,8 @@ where description like '%99.99\%%' escape '\';
 3             resume.hwp
 ---------------------------
 */
+
+--문제2 답안
 select fileno 파일번호, 
     substr(filepath, (instr(filepath, '\', -1)+1)) 파일명
 from tbl_files;
