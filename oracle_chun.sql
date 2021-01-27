@@ -173,11 +173,11 @@ where extract(year from entrance_date) = 2002
 --실습문제 2021.01.27---------------------
 
 --1. 학과테이블에서 계열별 정원의 평균을 조회(정원 내림차순 정렬)
-select department_name,
-        avg(capacity)||'명' 정원평균
+select category,
+        trunc(avg(capacity))||'명' 정원평균
 from tb_department
-group by department_name
-order by department_name desc;
+group by category
+order by 2 desc;
 
 --2. 휴학생을 제외하고, 학과별로 학생수를 조회(학과별 인원수 내림차순)
 select department_no,
