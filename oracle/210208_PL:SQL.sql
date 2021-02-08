@@ -31,6 +31,8 @@ begin
         
     end loop;
     dbms_output.put_line('total = ' || total);
+    
+    commit;
 
 end;
 /
